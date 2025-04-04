@@ -43,60 +43,24 @@ h4{
     text-align: center;
     margin: 10px;
   }
- /* headers*/
+ /* navbar*/
 
-nav ul{
-  font-size: 40px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 20px;
-  background-color: #D3D0C9 ;
- padding: 25px;
- border-radius: 25px;
- box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
-}
+ .mi-navbar {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;}
 
-nav ul li{
-  display: inline;
-}
+  .mi-navbar ul :hover{
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    box-shadow: #2B2B2B;
+    transform: scale(1.1);
+    
+  }
 
-nav ul li a{
- color: #f8f8f8;
- text-shadow: #2B2B2B 0px 0px 1px;
- text-decoration: none;
- font-weight: bold;
- font-size: 20px;
-}
 
-nav :hover{
-  color: #2B2B2B;
-} 
-
-.menu a {
- list-style: none;
- margin: 0px;
- padding: 0;
- text-align: center;
- background-color: #D3D0C9 ;
- padding: 10px;
- border-radius: 10px;
- box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
- color: #f8f8f8;
- text-shadow: #2B2B2B 0px 0px 1px;
- text-decoration: none;
- font-weight: bold;
- font-size: 20px;
-}
-
-.menu :hover{
-  color: #2B2B2B;
-}
-
-header img {
-  width: 30%;
-  height: auto
-}
 
 main h2{
   margin-top: 10px;
@@ -356,6 +320,4 @@ margin: 15px;
  margin: 0 auto;
  border-radius: 5px;
 }
-
-
 
