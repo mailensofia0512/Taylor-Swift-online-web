@@ -1,70 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> inscripcion.TaylorSwift </title>
-   <link rel="stylesheet" href="../ccs/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> inscripcion.TaylorSwift </title>
+  <link rel="stylesheet" href="../ccs/style.css">
 </head>
+
 <body>
-   <!-- parter superior  -->
-   <header> 
-      <h1> inscribirse </h1>
-     <nav class="menu">
-       <a href="index.html"> Volver al incio </a>
-     </nav>
-     <hr>
- </header>
+  <!-- parter superior  -->
+  <header>
+    <!-- navegador  -->
+    <nav class="navbar navbar-expand-lg mi-navbar  ">
+      <div class="container-fluid">
+        <div class="logo">
+          <!-- logo de la pagina  -->
+          <a class="navbar-brand " href="#"><img src="img/descarga (3).jpeg" alt="logo Taylor Swift">
+          </a>
+        </div>
+
+        <!-- opciones de menu -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="../index.html"> inico </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/shop.html"> Tienda </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/discos.html"> Discos </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="pages/testimonios.html"> Testimonios</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <h1> inscribirse </h1>
+
+  </header>
   <!-- contenido principal -->
- <main>  
+  <main>
     <h2> ¡ Regístrate para recibir actualizaciones ! </h2>
     <p> previo a inscribirte debes aceptar nuestras Terminos y condiciones:
-      <a href="#bases"> Terminos y condicion </a> </p>
- </main> 
- <!-- formulario -->
- <section id="inscripcion">
-       <h3> ¡ Se parte de la Taylor Nation y no te pierdas de las nuevas novedades !</h3> 
-       <form action="7submit"method="post">
-          <!-- nombre  -->
-          <label for="nombre" class="label"> Nombre: </label>
-          <input type="text" name="nombre" id="nombre" required>
-          <!-- genero -->
-          <label for="genero" class="label"> Género: </label>
-          <label for=""> Hombre</label>
-          <input type="radio" name="" id="">
-          <label for="">Mujer</label>
-          <input type="radio" name="" id="">
-          <label for="">Prefiero no decir</label>
-          <input type="radio" name="" id="">
-          <!-- correo -->
-          <label for="correo" class="label"> Correo electrónico: </label>
-          <input type="email" name="correo" id="correo" required>
-          <!-- pais -->
-         <label for="pais" class="label">País</label>
-         <select name="" id="" id="pais">
-         <option value="">Argentina</option>
-         <option value="">Brasil</option> 
-         <option value="">Chile</option>
-         <option value="">Colombia</option>
-         <option value="">Ecuador</option>
-         <option value="">México</option>
-         <option value=""> Peru </option>
-       </select>
-       <!-- enviar -->
-       <input type="submit" value="enviar" id ="enviar">
-      </form>
-     <img src="IMG/taylor-nation.jpg" alt="banner de Taylor Swift" id="banner">
-   </section>
-   <!-- bases y condiciones -->
-   <section id="bases">
-     <h3> terminos y condiciones </h3>
-     <p> Al proporcionar esta información, usted opta por recibir correos electrónicos de Taylor Nation con noticias, ofertas especiales, promociones y mensajes adaptados a sus intereses, y acepta los Términos y Condiciones de UMG/Taylor Nation. política de privacidad y condiciones de usoLos campos marcados con un asterisco (*) son obligatorios. Los clientes internacionales recibirán un correo electrónico para confirmar su suscripción a la lista de correo mencionada anteriormente</p>
-    </section>
-    <!-- footer -->
-   <footer>
-     <p><img src="IMG/Instagram_icon.png"" alt="logo a color de instagram"> <a href="https://www.instagram.com/taylorswift/" target="_blank"> @Taylorswift </a> </p>
-     <p> <img src="IMG/Gmail_icon_(2020).svg.png" alt="logo a color de gmail"> <a href="https://mail.google.com" target="_blank">Taylornation@gmail.com</a></p>
-     <p> Si está utilizando un lector de pantalla y tiene problemas para utilizar este sitio web, llame al 866-682-4413 para obtener ayuda. </p>
-   </footer>
+      <a href="#bases"> Terminos y condicion </a>
+    </p>
+  </main>
+  <!-- formulario -->
+  <section id="inscripcion">
+    <h3> ¡ Se parte de la Taylor Nation y no te pierdas de las nuevas novedades !</h3>
+    <form action="7submit" method="post">
+      <!-- nombre  -->
+      <label for="nombre" class="label"> Nombre: </label>
+      <input type="text" name="nombre" id="nombre" required>
+      <!-- genero -->
+      <label for="genero" class="label"> Género: </label>
+      <label for=""> Hombre</label>
+      <input type="radio" name="" id="">
+      <label for="">Mujer</label>
+      <input type="radio" name="" id="">
+      <label for="">Prefiero no decir</label>
+      <input type="radio" name="" id="">
+      <!-- correo -->
+      <label for="correo" class="label"> Correo electrónico: </label>
+      <input type="email" name="correo" id="correo" required>
+      <!-- pais -->
+      <label for="pais" class="label">País</label>
+      <select name="" id="" id="pais">
+        <option value="">Argentina</option>
+        <option value="">Brasil</option>
+        <option value="">Chile</option>
+        <option value="">Colombia</option>
+        <option value="">Ecuador</option>
+        <option value="">México</option>
+        <option value=""> Peru </option>
+      </select>
+      <!-- enviar -->
+      <input type="submit" value="enviar" id="enviar">
+    </form>
+    <img src="IMG/taylor-nation.jpg" alt="banner de Taylor Swift" id="banner">
+  </section>
+  <!-- bases y condiciones -->
+  <section id="bases">
+    <h3> terminos y condiciones </h3>
+    <p> Al proporcionar esta información, usted opta por recibir correos electrónicos de Taylor Nation con noticias,
+      ofertas especiales, promociones y mensajes adaptados a sus intereses, y acepta los Términos y Condiciones de
+      UMG/Taylor Nation. política de privacidad y condiciones de usoLos campos marcados con un asterisco (*) son
+      obligatorios. Los clientes internacionales recibirán un correo electrónico para confirmar su suscripción a la
+      lista de correo mencionada anteriormente</p>
+  </section>
+  <!-- footer -->
+  <footer>
+    <p><img src="IMG/Instagram_icon.png"" alt=" logo a color de instagram"> <a
+        href="https://www.instagram.com/taylorswift/" target="_blank"> @Taylorswift </a> </p>
+    <p> <img src="IMG/Gmail_icon_(2020).svg.png" alt="logo a color de gmail"> <a href="https://mail.google.com"
+        target="_blank">Taylornation@gmail.com</a></p>
+    <p> Si está utilizando un lector de pantalla y tiene problemas para utilizar este sitio web, llame al 866-682-4413
+      para obtener ayuda. </p>
+  </footer>
 </body>
-</html> 
+
+</html>
