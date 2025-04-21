@@ -1,0 +1,9 @@
+// import 
+@import "../abstracts/variables";
+
+// mixins
+@mixin caja-estilo ($radio, $sombra) {
+    border-radius:$radio;
+        box-shadow: $sombra-caja;
+  }
+  
