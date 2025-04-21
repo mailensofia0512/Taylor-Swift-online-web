@@ -3,7 +3,7 @@
 
 
 // estilos generales
-body {
+ body {
     width: 100%;
     background-color: $color-secundario;
     margin: 0;
@@ -38,7 +38,7 @@ body {
     margin: 10px;
   }
   /* banner */
-#banner {
+ #banner {
     width: 100%;
     height: auto;
     display: block;
@@ -76,7 +76,7 @@ body {
   .nav-link {
     margin-left: 15px;
     font-weight: 500;
-    text-shadow: 0px 1px 8px #615C56;
+    text-shadow: 0px 1px 8px $color-principal;
   }
   
   .nav-link:hover {
@@ -90,5 +90,5 @@ body {
   
   .navbar-toggler:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #B6954E;
+    box-shadow: 0 0 0 2px $color-dorado;
   }
