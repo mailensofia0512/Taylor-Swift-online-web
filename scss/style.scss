@@ -1,0 +1,10 @@
+// import carpeta base
+@import "base/base";
+@import "base/reset";
+
+// import carpeta abstracts 
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// import carpeta pages 
+@import "pages/home";
