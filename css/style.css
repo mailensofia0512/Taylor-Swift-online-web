@@ -40,6 +40,14 @@ h4 {
   margin: 10px;
 }
 
+a {
+  text-decoration: none;
+  color: #F8F8F8;
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: #2B2B2B 0px 0px 2px;
+}
+
 #banner {
   width: 100%;
   height: auto;
@@ -201,6 +209,170 @@ main p {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.container .item {
+  border: 1px solid #D3D0C9;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  background-color: #D3D0C9;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+}
+.container .item:hover {
+  color: none;
+  transform: scale(1.05);
+}
+.container .item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 250px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+div h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2B2B2B;
+  text-shadow: #2B2B2B 0px 0px 2px;
+  margin: 20px;
+}
+div #tienda {
+  font-family: "Times New Roman", Times, serif;
+  margin: 8px;
+  color: #D3D0C9;
+  text-shadow: #2B2B2B 0px 0px 2px;
+  background-color: #2B2B2B;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+#spotify {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #D3D0C9;
+}
+#spotify img {
+  width: 5%;
+  height: auto;
+}
+
+.laseras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.laseras .izquierda,
+.laseras .derecha {
+  width: 50%;
+  padding: 10px;
+}
+
+.izquierda .lista-discos {
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-height: 475px;
+  background-color: none;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+.izquierda .lista-discos ol {
+  list-style: circle;
+  margin: 10px;
+}
+.izquierda .lista-discos ol li {
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  line-height: 1.3;
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+  background-color: #D3D0C9;
+}
+.izquierda .lista-discos ol li:hover {
+  color: #2B2B2B;
+  transform: scale(1.05);
+}
+.izquierda .lista-discos a {
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #F8F8F8;
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: #2B2B2B 0px 0px 2px;
+}
+
+.derecha {
+  width: 50%;
+  padding: 10px;
+}
+.derecha img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* seccion audio y su link*/
+.link-audio {
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  text-shadow: #2B2B2B 0px 0px 2px;
+}
+.link-audio a {
+  text-decoration: none;
+  color: #F8F8F8;
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: #2B2B2B 0px 0px 2px;
+  background-color: #615C56;
+  border-radius: 5px;
+}
+.link-audio a {
+  text-decoration: none;
+  color: #F8F8F8;
+}
+
+.audio-discos {
+  text-align: center;
+  margin-top: 10px;
+  padding: 4px;
+}
+.audio-discos img {
+  width: 50%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.audio-discos p {
+  font-size: 14px;
+  margin: 5px;
+  background-color: #2B2B2B;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
