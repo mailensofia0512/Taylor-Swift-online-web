@@ -57,10 +57,8 @@ body {
 //  navbar
   
   .mi-navbar {
+    @include flex-center;
     background-color: $color-secundario;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px 20px;
     margin: 15px;
   }
@@ -70,6 +68,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
+
     img {
       height: 200px;
       width: auto;
@@ -84,26 +83,19 @@ body {
     margin-left: 15px;
     font-weight: 500;
     text-shadow: 0px 1px 8px $color-principal;
-    
-  }
+    @include hover-scale($color-hover: $color-dorado, $scale: 1.1); }
   
-  .nav-link:hover {
-    color: $color-dorado;
-    transform: scale(1.1);
-  }
+ 
   
   .navbar-toggler {
     border: none;
+    @include focus-delineado($color-dorado);
   }
   
-  .navbar-toggler:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px $color-dorado;
   
-  }
   footer {
-    background-color: #2B2B2B;
-    color: #F8F8F8;
+    background-color: $color-principal;
+    color: $color-secundario;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 1em;

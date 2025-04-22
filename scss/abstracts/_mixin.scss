@@ -22,40 +22,30 @@
     }
   }
 
-//   usado para arriba 
 
   @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  // Centrado horizontal solo
-  @mixin flex-x-center {
-    display: flex;
-    justify-content: center;
+  // subtitulo
+  @mixin subtitulo-style($font-size: 20px) {
+    padding: 0px;
+  text-align: center;
+  font-weight: lighter;
+  text-shadow: $sombra-texto;
+  font-size: 20px;
+  font-family: monospace;
+  margin: 20px;
+  line-height: 1;
+
   }
-  
-  // Centrado vertical solo
-  @mixin flex-y-center {
-    display: flex;
-    align-items: center;
-  }
-  
-  // Imagen circular responsive
-  @mixin img-circular($size: 200px) {
-    height: $size;
-    width: auto;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
- 
-  
+
+  //   usado para arriba 
   
   
   // Input focus o botón focus visible
-  @mixin focus-outline($color) {
+  @mixin focus-delineado($color) {
     &:focus {
       outline: none;
       box-shadow: 0 0 0 2px $color;
@@ -76,18 +66,7 @@
   }
   
  
-  // subtitulo
-  @mixin subtitulo-style($font-size: 20px) {
-    padding: 0px;
-  text-align: center;
-  font-weight: lighter;
-  text-shadow: $sombra-texto;
-  font-size: 20px;
-  font-family: monospace;
-  margin: 20px;
-  line-height: 1;
-
-  }
+  
 // Centrado con flex
 @mixin flex-center {
     display: flex;

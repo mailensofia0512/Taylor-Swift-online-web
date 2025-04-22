@@ -62,10 +62,9 @@ main {
             width: 30px;
             height: 30px;
         }
+        @include hover-scale (none, 1.1); 
     }
-    a:hover {
     
-        @include hover-scale (none, 1.1);   }
     p {
         flex-wrap: wrap;
         font-size: 25px;
