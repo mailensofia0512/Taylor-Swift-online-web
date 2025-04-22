@@ -2,8 +2,141 @@
 @import "../abstracts/variables";
 
 // mixins
-@mixin caja-estilo ($radio, $sombra) {
-    border-radius:$radio;
-        box-shadow: $sombra-caja;
+@mixin caja-estilo ($radio: 10px){
+    border-radius: $radio;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
   }
+  
+  @mixin texto-general($sombra-texto, $color) {
+    text-align: center;
+    text-shadow: $sombra-texto;
+    color: $color;
+
+  }
+
+  // Transición con hover suave
+  @mixin hover-scale($color-hover: gold, $scale: 1.1) {
+    &:hover {
+      color: $color-hover;
+      transform: scale($scale);
+    }
+  }
+
+//   usado para arriba 
+
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Centrado horizontal solo
+  @mixin flex-x-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  // Centrado vertical solo
+  @mixin flex-y-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  // Imagen circular responsive
+  @mixin img-circular($size: 200px) {
+    height: $size;
+    width: auto;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+ 
+  
+  
+  
+  // Input focus o botón focus visible
+  @mixin focus-outline($color) {
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px $color;
+    }
+  }
+  
+  // Texto centrado y mayúsculas
+  @mixin heading-style($font-size: 50px) {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $font-size;
+    margin: 0;
+  }
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
+  // subtitulo
+  @mixin subtitulo-style($font-size: 20px) {
+    padding: 0px;
+  text-align: center;
+  font-weight: lighter;
+  text-shadow: $sombra-texto;
+  font-size: 20px;
+  font-family: monospace;
+  margin: 20px;
+  line-height: 1;
+
+  }
+// Centrado con flex
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Centrado horizontal solo
+  @mixin flex-x-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  // Centrado vertical solo
+  @mixin flex-y-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  // Imagen circular responsive
+  @mixin img-circular($size: 200px) {
+    height: $size;
+    width: auto;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  // Transición con hover suave
+  @mixin hover-scale($color-hover: gold, $scale: 1.1) {
+    &:hover {
+      color: $color-hover;
+      transform: scale($scale);
+    }
+  }
+  
+  // Input focus o botón focus visible
+  @mixin focus-outline($color) {
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px $color;
+    }
+  }
+  
+  // Texto centrado y mayúsculas
+  @mixin heading-style($font-size: 50px) {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $font-size;
+    margin: 0;
+  }
+  
   

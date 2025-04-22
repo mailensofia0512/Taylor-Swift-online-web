@@ -1,3 +1,106 @@
 // index
+main {
 
+    h2 {
+        margin-top: 10px;
+     @include subtitulo-style (20px);
+        
+    }
+    p {
+        @include texto-general ($sombra-texto, $color-principal);
+        padding: 0px;
+        font-weight: lighter;
+        font-size: 20px;
+        font-family: monospace;
+        margin: 20px;
+        line-height: 1;
+       
+
+    }
+}
+
+
+
+/* promo del inicio */
+
+.promo {
+    display: flex;
+    margin: 0 30px auto;
+    align-items: center;
+}
+
+.mitad {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+
+
+.promocion {
+    flex-grow: inherit;
+    a { 
+        display: fixed;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        background-color: transparent;
+        p {
+            border-radius: 15%;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: $color-secundario;
+            background-color: $color-principal;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    a:hover {
+    
+        @include hover-scale (none, 1.1);   }
+    p {
+        flex-wrap: wrap;
+        font-size: 25px;
+        font-weight: bolder;
+        @include texto-general ($sombra-texto, $color-principal);
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
+        @include texto-general ($sombra-texto, $color-secundario);
+        background-color: $color-principal;
+    }
+
+}
+
+
+
+/* portadas  */
+
+.portadas {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    video {
+        width: 100%;
+        height: auto;
+        @include caja-estilo (10px)
+       
+    }
+    img {
+        width: 100%;
+        height: auto;
+        @include caja-estilo (10px)
+    }
+}
 

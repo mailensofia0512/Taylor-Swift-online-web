@@ -1,3 +1,4 @@
+// estilos 
 $color-principal: #2B2B2B;
 $color-secundario: #F8F8F8;
 $color-terciario: #D3D0C9;
@@ -8,3 +9,7 @@ $sombra-texto: #2B2B2B 0px 0px 2px;
 $sombra-caja: 0 0px 8px rgba(0, 0, 0, 0.2);
 $radio-borde: 10px;
 
+// breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;

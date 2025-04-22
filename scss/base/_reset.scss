@@ -70,20 +70,21 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
+    img {
+      height: 200px;
+      width: auto;
+      object-fit: cover;
+      border-radius: 50%;
+    }
   }
   
-  .logo img {
-    height: 200px;
-    width: auto;
-    object-fit: cover;
-    border-radius: 50%;
-  }
   
   // nav links 
   .nav-link {
     margin-left: 15px;
     font-weight: 500;
     text-shadow: 0px 1px 8px $color-principal;
+    
   }
   
   .nav-link:hover {
@@ -100,4 +101,17 @@ body {
     box-shadow: 0 0 0 2px $color-dorado;
   
   }
+  footer {
+    background-color: #2B2B2B;
+    color: #F8F8F8;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1em;
+    margin-top: 1em;
+    img {
+      width: 2%;
+      height: 2%;
+    }
+  }
+  
   

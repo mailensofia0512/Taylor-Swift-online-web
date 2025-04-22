@@ -62,7 +62,6 @@ h4 {
   justify-content: left;
   align-items: center;
 }
-
 .logo img {
   height: 200px;
   width: auto;
@@ -88,6 +87,122 @@ h4 {
 .navbar-toggler:focus {
   outline: none;
   box-shadow: 0 0 0 2px #B6954E;
+}
+
+footer {
+  background-color: #2B2B2B;
+  color: #F8F8F8;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 1em;
+  margin-top: 1em;
+}
+footer img {
+  width: 2%;
+  height: 2%;
+}
+
+main h2 {
+  margin-top: 10px;
+  padding: 0px;
+  text-align: center;
+  font-weight: lighter;
+  text-shadow: #2B2B2B 0px 0px 2px;
+  font-size: 20px;
+  font-family: monospace;
+  margin: 20px;
+  line-height: 1;
+}
+main p {
+  text-align: center;
+  text-shadow: #2B2B2B 0px 0px 2px;
+  color: #2B2B2B;
+  padding: 0px;
+  font-weight: lighter;
+  font-size: 20px;
+  font-family: monospace;
+  margin: 20px;
+  line-height: 1;
+}
+
+/* promo del inicio */
+.promo {
+  display: flex;
+  margin: 0 30px auto;
+  align-items: center;
+}
+
+.mitad {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.promocion {
+  flex-grow: inherit;
+}
+.promocion a {
+  display: fixed;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+.promocion a p {
+  border-radius: 15%;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #F8F8F8;
+  background-color: #2B2B2B;
+}
+.promocion a img {
+  width: 30px;
+  height: 30px;
+}
+.promocion a:hover:hover {
+  color: none;
+  transform: scale(1.1);
+}
+.promocion p {
+  flex-wrap: wrap;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: #2B2B2B 0px 0px 2px;
+  color: #2B2B2B;
+}
+.promocion h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: #2B2B2B 0px 0px 2px;
+  color: #F8F8F8;
+  background-color: #2B2B2B;
+}
+
+/* portadas  */
+.portadas {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+.portadas video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+}
+.portadas img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
