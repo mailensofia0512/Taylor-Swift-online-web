@@ -45,14 +45,8 @@ body {
     margin: 10px;
   }
 
-  a {
-    text-decoration: none;
-    color: $color-secundario;
-    font-size: 20px;
-    font-weight: bolder;
-    text-shadow: $sombra-texto;
-  }
-  
+ 
+
   //  banner 
  #banner {
     width: 100%;
@@ -101,14 +95,17 @@ body {
     @include focus-delineado($color-dorado);
   }
   
-  
+  // footer 
   footer {
     background-color: $color-principal;
     color: $color-secundario;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: $fuente-principal;
     padding: 1em;
     margin-top: 1em;
+    a{
+      @include a-estilo ($color-secundario); 
+    }
     img {
       width: 2%;
       height: 2%;

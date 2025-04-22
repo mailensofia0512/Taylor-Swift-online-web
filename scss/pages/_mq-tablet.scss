@@ -1,0 +1,58 @@
+// imports
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+
+// mq-tablet
+@media (max-width: $breakpoint-desktop) and (min-width: $breakpoint-tablet) {
+    main {
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px;
+        }
+    }
+
+    .promo {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .mitad {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .promocion {
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    .portadas {
+        gap: 15px;
+    }
+
+    .testimonios {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        article {
+          flex: 1 1 calc(50% - 20px);
+        }
+      }
+}
+
+
+
+
+
+

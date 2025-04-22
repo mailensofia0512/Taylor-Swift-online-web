@@ -2,11 +2,12 @@
 @import "../abstracts/variables";
 
 // mixins
+// estilo de caja 
 @mixin caja-estilo ($radio: 10px){
     border-radius: $radio;
     box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
   }
-  
+  // texto general
   @mixin texto-general($sombra-texto, $color) {
     text-align: center;
     text-shadow: $sombra-texto;
@@ -14,7 +15,7 @@
 
   }
 
-  // Transición con hover suave
+  // Transición con hover 
   @mixin hover-scale($color-hover: gold, $scale: 1.1) {
     &:hover {
       color: $color-hover;
@@ -22,7 +23,7 @@
     }
   }
 
-
+// centrar con flex 
   @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -39,10 +40,7 @@
   margin: 20px;
   line-height: 1;
 
-  }
-
-  //   usado para arriba 
-  
+  }  
   
   // Input focus o botón focus visible
   @mixin focus-delineado($color) {
@@ -51,71 +49,28 @@
       box-shadow: 0 0 0 2px $color;
     }
   }
+
+//  estilo link
+@mixin a-estilo($color) {
+  color: $color;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($color, 25%);
+  }
+}
   
-  // Texto centrado y mayúsculas
-  @mixin heading-style($font-size: 50px) {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: $font-size;
-    margin: 0;
-  }
-  @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+//  flex column
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+  
+
+
   
  
   
-// Centrado con flex
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+ 
   
-  // Centrado horizontal solo
-  @mixin flex-x-center {
-    display: flex;
-    justify-content: center;
-  }
-  
-  // Centrado vertical solo
-  @mixin flex-y-center {
-    display: flex;
-    align-items: center;
-  }
-  
-  // Imagen circular responsive
-  @mixin img-circular($size: 200px) {
-    height: $size;
-    width: auto;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  // Transición con hover suave
-  @mixin hover-scale($color-hover: gold, $scale: 1.1) {
-    &:hover {
-      color: $color-hover;
-      transform: scale($scale);
-    }
-  }
-  
-  // Input focus o botón focus visible
-  @mixin focus-outline($color) {
-    &:focus {
-      outline: none;
-      box-shadow: 0 0 0 2px $color;
-    }
-  }
-  
-  // Texto centrado y mayúsculas
-  @mixin heading-style($font-size: 50px) {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: $font-size;
-    margin: 0;
-  }
-  
-  
+ 

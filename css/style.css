@@ -40,14 +40,6 @@ h4 {
   margin: 10px;
 }
 
-a {
-  text-decoration: none;
-  color: #F8F8F8;
-  font-size: 20px;
-  font-weight: bolder;
-  text-shadow: #2B2B2B 0px 0px 2px;
-}
-
 #banner {
   width: 100%;
   height: auto;
@@ -99,9 +91,16 @@ footer {
   background-color: #2B2B2B;
   color: #F8F8F8;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Times New Roman", Times, serif;
   padding: 1em;
   margin-top: 1em;
+}
+footer a {
+  color: #F8F8F8;
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(184.25, 184.25, 184.25);
 }
 footer img {
   width: 2%;
@@ -137,6 +136,13 @@ main p {
   margin: 0 30px auto;
   align-items: center;
 }
+.promo a {
+  color: #2B2B2B;
+  text-decoration: none;
+}
+.promo a:hover {
+  color: black;
+}
 
 .mitad {
   display: flex;
@@ -149,15 +155,13 @@ main p {
 
 .promocion {
   flex-grow: inherit;
-}
-.promocion a {
   display: fixed;
   justify-content: center;
   margin: 0px;
   padding: 0px;
   background-color: transparent;
 }
-.promocion a p {
+.promocion p {
   border-radius: 15%;
   margin: 10px;
   font-size: 20px;
@@ -165,15 +169,16 @@ main p {
   color: #F8F8F8;
   background-color: #2B2B2B;
 }
-.promocion a img {
+.promocion img {
   width: 30px;
   height: 30px;
 }
-.promocion a:hover {
+.promocion:hover {
   color: none;
   transform: scale(1.1);
 }
-.promocion p {
+
+p {
   flex-wrap: wrap;
   font-size: 25px;
   font-weight: bolder;
@@ -181,13 +186,13 @@ main p {
   text-shadow: #2B2B2B 0px 0px 2px;
   color: #2B2B2B;
 }
-.promocion h3 {
+
+h3 {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   text-shadow: #2B2B2B 0px 0px 2px;
   color: #F8F8F8;
-  background-color: #2B2B2B;
 }
 
 /* portadas  */
@@ -336,11 +341,18 @@ div #tienda {
 
 /* seccion audio y su link*/
 .link-audio {
-  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
   padding: 20px;
-  text-align: center;
   border-radius: 10px;
+}
+.link-audio h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2B2B2B;
   text-shadow: #2B2B2B 0px 0px 2px;
 }
 .link-audio a {
@@ -351,10 +363,6 @@ div #tienda {
   text-shadow: #2B2B2B 0px 0px 2px;
   background-color: #615C56;
   border-radius: 5px;
-}
-.link-audio a {
-  text-decoration: none;
-  color: #F8F8F8;
 }
 
 .audio-discos {
@@ -373,6 +381,234 @@ div #tienda {
   background-color: #2B2B2B;
   padding: 5px;
   border-radius: 5px;
+}
+
+#ir-a-mensajes {
+  text-decoration: none;
+  color: #2B2B2B;
+  background-color: #D3D0C9;
+  font-size: large;
+  border: 6px solid #D3D0C9;
+  border-radius: 5px;
+}
+
+.testimonios {
+  display: flex;
+  margin: 30px;
+  padding: 30px;
+}
+.testimonios a {
+  color: #2B2B2B;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.testimonios a:hover {
+  color: black;
+}
+.testimonios h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 22px;
+  background-color: rgba(197, 192, 183, 0.7176470588);
+  text-align: left;
+}
+.testimonios article {
+  padding: 15px;
+}
+
+#mensajes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*  inscripcion */
+p a {
+  color: #D3D0C9;
+  text-decoration: none;
+  background-color: #2B2B2B;
+  margin-top: 3px;
+}
+p a:hover {
+  color: rgb(153.7551020408, 146.8520408163, 130.7448979592);
+}
+p a:hover {
+  color: #B6954E;
+  transform: scale(1.1);
+}
+
+#bases {
+  margin: 25px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #D3D0C9;
+  border-radius: 10px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 500px;
+}
+
+.label {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bolder;
+  font-size: 18px;
+  text-shadow: #2B2B2B 0px 0px 2px;
+  text-align: left;
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #F8F8F8;
+  border-radius: 5px;
+}
+
+#enviar {
+  color: #D3D0C9;
+  background-color: #2B2B2B;
+  width: 30%;
+  margin: 15px auto 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  main h2 {
+    font-size: 18px;
+  }
+  main p {
+    font-size: 16px;
+    margin: 10px;
+  }
+  .promo {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .mitad {
+    width: 100%;
+    padding: 5px;
+  }
+  .promocion p {
+    font-size: 16px;
+  }
+  .promocion img {
+    width: 25px;
+    height: 25px;
+  }
+  .portadas {
+    gap: 10px;
+  }
+  .testimonios {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    gap: 20px;
+  }
+  .testimonios article {
+    padding: 15px;
+  }
+  .testimonios h3 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 22px;
+    background-color: rgba(197, 192, 183, 0.7176470588);
+    text-align: left;
+  }
+  .testimonios a {
+    color: #2B2B2B;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  .testimonios a:hover {
+    color: black;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  main h2 {
+    font-size: 20px;
+  }
+  main p {
+    font-size: 18px;
+    margin: 15px;
+  }
+  .promo {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .mitad {
+    width: 90%;
+    padding: 10px;
+  }
+  .promocion p {
+    font-size: 18px;
+  }
+  .promocion img {
+    width: 28px;
+    height: 28px;
+  }
+  .portadas {
+    gap: 15px;
+  }
+  .testimonios {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .testimonios article {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media (min-width: 1024px) {
+  main h2 {
+    font-size: 24px;
+  }
+  main p {
+    font-size: 20px;
+    margin: 20px;
+  }
+  .promo {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 50px;
+  }
+  .mitad {
+    width: 50%;
+    padding: 20px;
+  }
+  .promocion p {
+    font-size: 20px;
+  }
+  .promocion img {
+    width: 30px;
+    height: 30px;
+  }
+  .portadas {
+    gap: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

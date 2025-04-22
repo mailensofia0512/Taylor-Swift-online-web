@@ -1,0 +1,71 @@
+ // import variables 
+ @import "../abstracts/variables";
+ @import "../abstracts/mixin";
+
+ /*  inscripcion */
+
+ // Estilos generales
+
+ p {
+     a {
+         @include a-estilo($color-terciario);
+         @include hover-scale($color-dorado, 1.1);
+         background-color: $color-principal;
+         margin-top: 3px;
+     }
+ }
+
+ #bases {
+     margin: 25px auto;
+     padding: 10px;
+     text-align: center;
+ }
+
+ // Formulario
+ form {
+     @include flex-column;
+     @include flex-center;
+     gap: 20px;
+     text-align: center;
+     margin: 20px auto;
+     padding: 20px;
+     background-color: $color-terciario;
+     @include caja-estilo(10px);
+     width: 80%;
+     max-width: 500px;
+ }
+
+ // Etiquetas
+ .label {
+     font-family: "Cormorant Garamond", serif;
+     font-weight: bolder;
+     font-size: 18px;
+     text-shadow: $sombra-texto;
+     text-align: left;
+     width: 100%;
+ }
+
+ // Inputs y textarea
+ input,
+ textarea {
+     width: 100%;
+     padding: 10px;
+     font-size: 16px;
+     border: 1px solid $color-secundario;
+     border-radius: 5px;
+ }
+
+ // Botón de envío
+ #enviar {
+     color: $color-terciario;
+     background-color: $color-principal;
+     width: 30%;
+     margin: 15px auto 0;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: bolder;
+     font-size: 20px;
+     padding: 10px;
+     border: none;
+     border-radius: 5px;
+    
+ }

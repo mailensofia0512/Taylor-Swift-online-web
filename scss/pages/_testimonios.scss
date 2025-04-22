@@ -1,44 +1,43 @@
 #ir-a-mensajes {
     text-decoration: none;
-    color: #2B2B2B;
-    background-color: #F0EFEB;
+    color: $color-principal;
+    background-color: $color-terciario;
     font-size: large;
-    border: 6px solid #F0EFEB;
+    border: 6px solid $color-terciario;
     border-radius: 5px;
-  
-  }
-  
-  .testimonios {
+
+}
+
+.testimonios {
     display: flex;
     margin: 30px;
     padding: 30px;
-  }
-  
-  .testimonios a {
-    padding: 10px;
-    margin-top: 10px;
-    text-decoration: none;
-    font-size: 14px;
-    background-color: #2B2B2B;
-    padding: 10px;
-    border-radius: 10px;
-    color: #F8F8F8;
-  }
-  
-  article {
-    padding: 15px;
-  }
-  
-  .testimonios h3 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22px;
-    background-color: #c5c0b7b7;
-    text-align: left;
-  
-  }
-  
-  #mensajes {
+
+    a { 
+        @include a-estilo ($color-principal); 
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 25px;
+        padding: 10px;
+        border-radius: 10px; 
+    }
+
+    h3 {
+        font-family: $fuente-secundaria;
+        font-size: 22px;
+        background-color: #c5c0b7b7;
+        text-align: left;
+
+    }
+
+    article {
+        padding: 15px;
+    }
+}
+
+
+#mensajes {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
+}

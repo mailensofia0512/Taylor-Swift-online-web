@@ -1,0 +1,73 @@
+// imports 
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+
+// mq-mobile
+
+@media (max-width: $breakpoint-mobile) {
+    main {
+        h2 {
+          font-size: 18px;
+        }
+    
+        p {
+          font-size: 16px;
+          margin: 10px;
+        }
+      }
+    
+      .promo {
+        flex-direction: column;
+        margin: 10px;
+      }
+    
+      .mitad {
+        width: 100%;
+        padding: 5px;
+      }
+    
+      .promocion {
+        p {
+          font-size: 16px;
+        }
+    
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    
+      .portadas {
+        gap: 10px;
+      }
+
+      .testimonios {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+        gap: 20px;
+      
+        article {
+          padding: 15px;
+        }
+      
+        h3 {
+          font-family: $fuente-secundaria;
+          font-size: 22px;
+          background-color: #c5c0b7b7;
+          text-align: left;
+        }
+      
+        a {
+          @include a-estilo($color-principal);
+          padding: 10px;
+          font-size: 20px;
+          border-radius: 10px;
+        }
+      }
+      
+    }
+    
+  
+  
