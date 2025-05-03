@@ -7,9 +7,11 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px; 
+    gap: 1rem;
+;
+    
 
     .item {
-
         border: 1px solid $color-terciario;
         border-radius: 12px;
         padding: 15px;
@@ -18,15 +20,30 @@
         box-shadow:$sombra-caja;
         @include hover-scale(none, 1.05);
 
+        
+        h3 {
+            margin-top: 0.5rem;
+        }
+
         img {
             width: 100%;
             height: auto;
             object-fit: cover;
             max-height: 250px;
             border-radius: 8px;
+            margin-top: 0.5rem;
             margin-bottom: 10px;
             box-shadow: $sombra-caja;
         }
+    
+    }
+    .item-relleno {
+        justify-content: center;
+
+    img{
+        margin-top: 1rem;
+    }
+   
     }
 }
 
