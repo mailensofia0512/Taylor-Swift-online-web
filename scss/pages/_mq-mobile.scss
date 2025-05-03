@@ -5,6 +5,12 @@
 // mq-mobile
 
 @media (max-width: $breakpoint-mobile) {
+    footer {
+        img {
+          width: 30%;
+          height: 30%;
+        }
+      }
     main {
         h2 {
           font-size: 18px;

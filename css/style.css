@@ -16,7 +16,8 @@ body {
 
 header {
   text-align: center;
-  padding: 7px;
+  padding: 0px;
+  margin: 0px;
   font-size: 30px;
 }
 
@@ -88,12 +89,13 @@ h4 {
 }
 
 footer {
+  margin: 0px;
   background-color: #2B2B2B;
+}
+footer .footer-text {
   color: #F8F8F8;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  padding: 1em;
-  margin-top: 1em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 footer a {
   color: #F8F8F8;
@@ -495,6 +497,10 @@ textarea {
 }
 
 @media (max-width: 480px) {
+  footer img {
+    width: 30%;
+    height: 30%;
+  }
   main h2 {
     font-size: 18px;
   }
