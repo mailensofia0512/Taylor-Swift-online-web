@@ -6,11 +6,13 @@
 
 @media (max-width: $breakpoint-mobile) {
     footer {
-        img {
-          width: 15%;
-          height: 15%;
-        }
+      
+          img {
+            max-width: 5px;
+            height:auto;
+        
       }
+    }
     main {
         h2 {
           font-size: 18px;
