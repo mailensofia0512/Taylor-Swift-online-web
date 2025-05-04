@@ -99,23 +99,31 @@ h4 {
 
 // footer 
 footer {
- margin: 0;
+  margin: 0;
 
-  .footer-text{
+  footer p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+
+  .footer-text {
     color: $color-secundario;
     text-align: center;
     font-family: $fuente-secundaria;
     font-weight: lighter
   }
-    a {
-      @include a-estilo ($color-secundario);
-    }
 
-   .footer-img {
+  a {
+    @include a-estilo ($color-secundario);
+  }
+
+  .footer-img {
     max-width: 100%;
     height: auto;
-    display: block;
+
   }
-  
-    background-color: $color-principal;
+
+  background-color: $color-principal;
 }

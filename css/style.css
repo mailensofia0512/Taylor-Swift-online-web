@@ -92,6 +92,11 @@ footer {
   margin: 0;
   background-color: #2B2B2B;
 }
+footer footer p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 footer .footer-text {
   color: #F8F8F8;
   text-align: center;
@@ -108,7 +113,6 @@ footer a:hover {
 footer .footer-img {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 main h2 {
@@ -510,9 +514,14 @@ textarea {
 }
 
 @media (max-width: 480px) {
+  footer footer p {
+    flex-direction: row;
+    align-items: center;
+  }
   footer .footer-img {
-    max-width: 10px !important;
+    width: 10px;
     height: auto;
+    display: inline-block;
   }
   main h2 {
     font-size: 18px;
