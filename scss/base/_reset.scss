@@ -105,12 +105,13 @@ footer {
     color: $color-secundario;
     text-align: center;
     font-family: $fuente-secundaria;
+    font-weight: lighter
   }
     a {
       @include a-estilo ($color-secundario);
     }
 
-    img {
+   .footer-img {
       width: 24px;
       height: auto;
       margin-right: 8px;
