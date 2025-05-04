@@ -111,8 +111,9 @@ footer a:hover {
   color: rgb(184.25, 184.25, 184.25);
 }
 footer .footer-img {
-  max-width: 100%;
+  width: 25px;
   height: auto;
+  display: inline-block;
 }
 
 main h2 {
